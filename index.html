@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div onclick="Startsimulation();" id="st">simulate virtual time</div>
+    <div id="time">Loading time now</div>
+    <div id="add-new" class="hide">
+        <div class="container">
+            <label for="">Alarm label:</label>
+            <input id="labelInput" type="text" name="" id="">
+        </div>
+        <div class="container">
+            <label for="">Alarm time</label>
+            <input id="timeInput" type="time" name="" id="">
+        </div>
+        <div class="container">
+            <button onclick="ProcessInput()">Add</button>
+            <button onclick="AddNewToggle(false);">Cancel</button>
+        </div>
+    </div>
+    <div id="body">
+        <div id="Timer-on">
+
+        </div>
+        <div id="add-btn" onclick="AddNewToggle(true);">Add New alarm</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
