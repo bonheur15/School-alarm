@@ -11,9 +11,11 @@ function AddNewToggle(state){
 
 
 function StoreNewAlarm(data){
+ 
     StoredAlarm.push(data);
     DisplayStoredTime();
     AddNewToggle(false);
+    CheckAlarm();
 }
 
 var InputFromData= {
@@ -49,6 +51,10 @@ setInterval(() => {
         CheckAlarm();
     }
 
+}, 60000);
+
+setTimeout(() => {
+    DisplayTimeNow();
 }, 1000);
 var simulation = false;
 function CheckAlarm(){
